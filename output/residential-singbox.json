@@ -4,65 +4,81 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - vic",
+      "server": "104.21.78.9",
+      "server_port": 443,
+      "uuid": "a8890c1b-3622-3106-c4be-d8671be32d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "summer-meadow-af5b.woowoorrrkk.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sync",
+        "headers": {
+          "Host": "summer-meadow-af5b.woowoorrrkk.workers.dev"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - vic",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - vic",
       "server": "36.224.152.189",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
-      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - vic",
-      "server": "dlbgwqqngrjbwan.jiedddym.com",
-      "server_port": 42868,
-      "uuid": "6dbb8854-17a5-4684-b930-c11f022975ec",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 (移动家宽) - vic",
+      "server": "170.168.99.8",
+      "server_port": 8443,
+      "uuid": "4350213a-b4e7-262a-0bd7-bd16957cf71a",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "cdn.steamstatic.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "GLtdhq3ZSKYlJv62ye5dFKfjI3UF9mBIGOl5ms75rVA",
-          "short_id": "747a75eb5ecef8"
+          "public_key": "R8Mogel1wypEIpcUXnGmG1cuzT9POghNhqJcw4-CLx0",
+          "short_id": ""
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - vic",
-      "server": "hkt.ddnnss.me",
-      "server_port": 443,
-      "uuid": "363d3f39-bed2-3b6a-b692-c7c3236c2b1c",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇯🇵 日本 (Japan) 04 (家宽) - vic",
+      "server": "84.22.150.39",
+      "server_port": 7443,
+      "uuid": "9d5cbb90-876b-448d-9874-27ab35bae6e7",
       "tls": {
         "enabled": true,
-        "server_name": "www.xdstudio.hk",
+        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "coAFlCEKJKpNWWSMAbgwnXtWa703hZZkjoQznSF_Pz0",
-          "short_id": ""
+          "fingerprint": "chrome"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - vic",
-      "server": "hk02.xn--9kq85xcu6b.com",
-      "server_port": 65534,
-      "password": "45dae7e6-4573-4e6b-a1f3-57b3bbaf990d",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk02.xn--9kq85xcu6b.com",
-        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
+        }
       }
     },
     {
@@ -70,20 +86,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - vic",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - vic",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - vic",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - vic"
+        "🇺🇸 美国 (United States) 01 (家宽) - vic",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - vic",
+        "🇸🇪 瑞典 (Sweden) 03 (移动家宽) - vic",
+        "🇯🇵 日本 (Japan) 04 (家宽) - vic"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - vic",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - vic",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - vic",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - vic"
+        "🇺🇸 美国 (United States) 01 (家宽) - vic",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - vic",
+        "🇸🇪 瑞典 (Sweden) 03 (移动家宽) - vic",
+        "🇯🇵 日本 (Japan) 04 (家宽) - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
