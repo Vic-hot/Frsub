@@ -4,31 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - vic",
-      "server": "104.21.78.9",
-      "server_port": 443,
-      "uuid": "a8890c1b-3622-3106-c4be-d8671be32d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "summer-meadow-af5b.woowoorrrkk.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "summer-meadow-af5b.woowoorrrkk.workers.dev"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - vic",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - vic",
       "server": "36.224.152.189",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
@@ -36,48 +13,20 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 (移动家宽) - vic",
-      "server": "170.168.99.8",
-      "server_port": 8443,
-      "uuid": "4350213a-b4e7-262a-0bd7-bd16957cf71a",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 (家宽) R62 - vic",
+      "server": "172.67.134.170",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-635698a6bb9c",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.steamstatic.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "R8Mogel1wypEIpcUXnGmG1cuzT9POghNhqJcw4-CLx0",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 04 (家宽) - vic",
-      "server": "84.22.150.39",
-      "server_port": 7443,
-      "uuid": "9d5cbb90-876b-448d-9874-27ab35bae6e7",
-      "tls": {
-        "enabled": true,
-        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "jdzit4e4urks.xwzohsebujps.workers.dev",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/@Marisa_kristi",
+        "path": "/stream/PANEL_ZEUS/635698a6bb9c/loc-0",
         "headers": {
-          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
+          "Host": "jdzit4e4urks.xwzohsebujps.workers.dev"
         }
       }
     },
@@ -86,20 +35,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - vic",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - vic",
-        "🇸🇪 瑞典 (Sweden) 03 (移动家宽) - vic",
-        "🇯🇵 日本 (Japan) 04 (家宽) - vic"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - vic",
+        "🇹🇷 土耳其 (Turkey) 02 (家宽) R62 - vic"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - vic",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - vic",
-        "🇸🇪 瑞典 (Sweden) 03 (移动家宽) - vic",
-        "🇯🇵 日本 (Japan) 04 (家宽) - vic"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - vic",
+        "🇹🇷 土耳其 (Turkey) 02 (家宽) R62 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

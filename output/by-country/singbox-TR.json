@@ -6,55 +6,42 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - vic",
-      "server": "185.87.24.4",
-      "server_port": 2085,
-      "uuid": "128314f6-f09a-426f-b758-b8e559c38ddb",
+      "server": "172.67.192.84",
+      "server_port": 2095,
+      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
       "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+        "type": "ws",
+        "path": "/juvsrnmgdu8i0179k5",
+        "headers": {
+          "Host": "index.harmonica02.workers.dev"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - vic",
-      "server": "188.132.237.20",
-      "server_port": 2095,
-      "uuid": "3b9e513e-30d9-4ca8-8340-8f33fc6710de"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - vic",
-      "server": "add.life-pro.ir",
-      "server_port": 8082,
-      "uuid": "79f98593-6a21-4783-a425-3d5609a79df1"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - vic",
-      "server": "188.132.174.236",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "rSeYcig_XBy8q3k33NpK3A"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - vic",
-      "server": "shop.neexbyte.ir",
-      "server_port": 8443,
-      "uuid": "464bc502-f963-45b6-81e3-e33d18427506",
+      "server": "156.67.63.231",
+      "server_port": 443,
+      "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "shop.neexbyte.ir",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
+        "server_name": "sync-bridge.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI",
+          "short_id": "5606d4a25c99e7af"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - vic",
-      "server": "172.67.134.170",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - vic",
+      "server": "172.67.151.109",
       "server_port": 443,
       "uuid": "50414e45-4c5f-5a45-5553-635698a6bb9c",
       "tls": {
@@ -77,10 +64,7 @@
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - vic",
         "🇹🇷 土耳其 (Turkey) 02 - vic",
-        "🇹🇷 土耳其 (Turkey) 03 - vic",
-        "🇹🇷 土耳其 (Turkey) 04 - vic",
-        "🇹🇷 土耳其 (Turkey) 05 - vic",
-        "🇹🇷 土耳其 (Turkey) 06 - vic"
+        "🇹🇷 土耳其 (Turkey) 03 - vic"
       ]
     },
     {
@@ -89,10 +73,7 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - vic",
         "🇹🇷 土耳其 (Turkey) 02 - vic",
-        "🇹🇷 土耳其 (Turkey) 03 - vic",
-        "🇹🇷 土耳其 (Turkey) 04 - vic",
-        "🇹🇷 土耳其 (Turkey) 05 - vic",
-        "🇹🇷 土耳其 (Turkey) 06 - vic"
+        "🇹🇷 土耳其 (Turkey) 03 - vic"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
